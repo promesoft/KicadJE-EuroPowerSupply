@@ -15,55 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	3950 4550 4000 4550
-Wire Wire Line
-	3950 4450 4000 4450
-Wire Wire Line
-	3950 4350 4000 4350
-Wire Wire Line
-	3950 4250 4000 4250
-$Comp
-L Eurorack:Doepfer_Power_10pin P103
-U 1 1 5C36F33B
-P 3600 4550
-F 0 "P103" H 3600 5115 50  0000 C CNN
-F 1 "Doepfer_Power_10pin" H 3600 5024 50  0000 C CNN
-F 2 "Connectors_IDC:IDC-Header_2x05_Pitch2.54mm_Straight" H 3600 4550 50  0001 C CNN
-F 3 "DOCUMENTATION" H 3600 4550 50  0001 C CNN
-	1    3600 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 4650 4000 4650
-Wire Wire Line
-	3250 4650 3250 4800
-Wire Wire Line
-	3250 4800 4000 4800
-Wire Wire Line
-	4000 4800 4000 4650
-Wire Wire Line
-	4000 4550 4000 4450
-Connection ~ 4000 4450
-Wire Wire Line
-	4000 4450 4000 4350
-Connection ~ 4000 4350
-Wire Wire Line
-	4000 4350 4150 4350
-Wire Wire Line
-	4000 4250 4000 4050
-Wire Wire Line
-	4000 4050 3250 4050
-Wire Wire Line
-	3250 4050 3250 4250
-Wire Wire Line
-	4150 4350 4150 3950
-Wire Wire Line
-	4150 3950 3150 3950
-Wire Wire Line
-	3150 3950 3150 4450
-Wire Wire Line
-	3150 4450 3250 4450
-Wire Wire Line
 	1450 4550 1500 4550
 Wire Wire Line
 	1450 4450 1500 4450
@@ -258,203 +209,6 @@ Wire Wire Line
 	2950 4750 2950 4700
 Connection ~ 2650 4750
 Wire Wire Line
-	4000 4550 4350 4550
-Wire Wire Line
-	4000 4450 4350 4450
-Wire Wire Line
-	4150 4350 4350 4350
-Wire Wire Line
-	5050 4250 5050 4000
-Wire Wire Line
-	5050 4000 4350 4000
-Wire Wire Line
-	4350 4000 4350 4250
-Wire Wire Line
-	5050 4350 5100 4350
-Wire Wire Line
-	5100 4350 5100 3950
-Wire Wire Line
-	4000 4250 4350 4250
-Wire Wire Line
-	5050 4550 5100 4550
-Wire Wire Line
-	5100 4550 5100 4450
-Connection ~ 5100 4350
-Wire Wire Line
-	5050 4450 5100 4450
-Connection ~ 5100 4450
-Wire Wire Line
-	5100 4450 5100 4350
-Text GLabel 5300 4850 2    50   Input ~ 0
-CV
-Text GLabel 5300 4950 2    50   Input ~ 0
-Gate
-Wire Wire Line
-	5050 4950 5300 4950
-$Comp
-L power:+12V #PWR0120
-U 1 1 5C4F8EDB
-P 5350 4600
-F 0 "#PWR0120" H 5350 4450 50  0001 C CNN
-F 1 "+12V" H 5365 4773 50  0000 C CNN
-F 2 "" H 5350 4600 50  0001 C CNN
-F 3 "" H 5350 4600 50  0001 C CNN
-	1    5350 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-12V #PWR0116
-U 1 1 5C4F8EE1
-P 5350 4200
-F 0 "#PWR0116" H 5350 4300 50  0001 C CNN
-F 1 "-12V" H 5365 4373 50  0000 C CNN
-F 2 "" H 5350 4200 50  0001 C CNN
-F 3 "" H 5350 4200 50  0001 C CNN
-	1    5350 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 5C4F8EE7
-P 5200 4450
-F 0 "#PWR0118" H 5200 4200 50  0001 C CNN
-F 1 "GND" H 5205 4277 50  0000 C CNN
-F 2 "" H 5200 4450 50  0001 C CNN
-F 3 "" H 5200 4450 50  0001 C CNN
-	1    5200 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 4450 5200 4450
-Wire Wire Line
-	5350 4650 5350 4600
-Wire Wire Line
-	5350 4200 5350 4250
-Wire Wire Line
-	5350 4250 5050 4250
-Wire Wire Line
-	4150 3950 5100 3950
-Wire Wire Line
-	5050 4850 5100 4850
-$Comp
-L Eurorack:Doepfer_Power_16pin P104
-U 1 1 5C4F8EF3
-P 4700 4550
-F 0 "P104" H 4700 5215 50  0000 C CNN
-F 1 "Doepfer_Power_16pin" H 4700 5124 50  0000 C CNN
-F 2 "Connectors_IDC:IDC-Header_2x08_Pitch2.54mm_Straight" H 4700 4550 50  0001 C CNN
-F 3 "DOCUMENTATION" H 4700 4550 50  0001 C CNN
-	1    4700 4550
-	1    0    0    -1  
-$EndComp
-Connection ~ 4350 4250
-Connection ~ 5050 4250
-Wire Wire Line
-	4000 4650 4200 4650
-Wire Wire Line
-	5050 4950 5050 5100
-Wire Wire Line
-	5050 5100 4350 5100
-Wire Wire Line
-	4350 5100 4350 4950
-Connection ~ 5050 4950
-Wire Wire Line
-	5100 4850 5100 5150
-Wire Wire Line
-	5100 5150 4300 5150
-Wire Wire Line
-	4300 5150 4300 4850
-Wire Wire Line
-	4300 4850 4350 4850
-Connection ~ 5100 4850
-Wire Wire Line
-	5100 4850 5300 4850
-Wire Wire Line
-	5050 4750 5150 4750
-Wire Wire Line
-	5150 4750 5150 5200
-Wire Wire Line
-	5150 5200 4250 5200
-Wire Wire Line
-	4250 5200 4250 4750
-Wire Wire Line
-	4250 4750 4350 4750
-$Comp
-L power:+5V #PWR0122
-U 1 1 5C4F8F0C
-P 5450 4700
-F 0 "#PWR0122" H 5450 4550 50  0001 C CNN
-F 1 "+5V" H 5465 4873 50  0000 C CNN
-F 2 "" H 5450 4700 50  0001 C CNN
-F 3 "" H 5450 4700 50  0001 C CNN
-	1    5450 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 4750 5450 4750
-Wire Wire Line
-	5450 4750 5450 4700
-Connection ~ 5150 4750
-Connection ~ 4000 4250
-Connection ~ 4000 4550
-Connection ~ 4000 4650
-Connection ~ 4150 3950
-Connection ~ 4150 4350
-Wire Wire Line
-	3250 4550 3250 4450
-Connection ~ 3250 4450
-Wire Wire Line
-	3250 4350 3250 4450
-Wire Wire Line
-	4000 5950 4050 5950
-Wire Wire Line
-	4000 5850 4050 5850
-Wire Wire Line
-	4000 5750 4050 5750
-Wire Wire Line
-	4000 5650 4050 5650
-$Comp
-L Eurorack:Doepfer_Power_10pin P107
-U 1 1 5C501E6B
-P 3650 5950
-F 0 "P107" H 3650 6515 50  0000 C CNN
-F 1 "Doepfer_Power_10pin" H 3650 6424 50  0000 C CNN
-F 2 "Connectors_IDC:IDC-Header_2x05_Pitch2.54mm_Straight" H 3650 5950 50  0001 C CNN
-F 3 "DOCUMENTATION" H 3650 5950 50  0001 C CNN
-	1    3650 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 6050 4050 6050
-Wire Wire Line
-	3300 6050 3300 6200
-Wire Wire Line
-	3300 6200 4050 6200
-Wire Wire Line
-	4050 6200 4050 6050
-Wire Wire Line
-	4050 5950 4050 5850
-Connection ~ 4050 5850
-Wire Wire Line
-	4050 5850 4050 5750
-Connection ~ 4050 5750
-Wire Wire Line
-	4050 5750 4200 5750
-Wire Wire Line
-	4050 5650 4050 5450
-Wire Wire Line
-	4050 5450 3300 5450
-Wire Wire Line
-	3300 5450 3300 5650
-Wire Wire Line
-	4200 5750 4200 5350
-Wire Wire Line
-	4200 5350 3200 5350
-Wire Wire Line
-	3200 5350 3200 5850
-Wire Wire Line
-	3200 5850 3300 5850
-Wire Wire Line
 	1500 5950 1550 5950
 Wire Wire Line
 	1500 5850 1550 5850
@@ -648,149 +402,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 6150 3000 6100
 Connection ~ 2700 6150
-Wire Wire Line
-	4050 5950 4400 5950
-Wire Wire Line
-	4050 5850 4400 5850
-Wire Wire Line
-	4200 5750 4400 5750
-Wire Wire Line
-	5100 5650 5100 5400
-Wire Wire Line
-	5100 5400 4400 5400
-Wire Wire Line
-	4400 5400 4400 5650
-Wire Wire Line
-	5100 5750 5150 5750
-Wire Wire Line
-	5150 5750 5150 5350
-Wire Wire Line
-	4050 5650 4400 5650
-Wire Wire Line
-	5100 5950 5150 5950
-Wire Wire Line
-	5150 5950 5150 5850
-Connection ~ 5150 5750
-Wire Wire Line
-	5100 5850 5150 5850
-Connection ~ 5150 5850
-Wire Wire Line
-	5150 5850 5150 5750
-Text GLabel 5350 6250 2    50   Input ~ 0
-CV
-Text GLabel 5350 6350 2    50   Input ~ 0
-Gate
-Wire Wire Line
-	5100 6350 5350 6350
-$Comp
-L power:+12V #PWR0128
-U 1 1 5C501EFE
-P 5400 6000
-F 0 "#PWR0128" H 5400 5850 50  0001 C CNN
-F 1 "+12V" H 5415 6173 50  0000 C CNN
-F 2 "" H 5400 6000 50  0001 C CNN
-F 3 "" H 5400 6000 50  0001 C CNN
-	1    5400 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-12V #PWR0124
-U 1 1 5C501F04
-P 5400 5600
-F 0 "#PWR0124" H 5400 5700 50  0001 C CNN
-F 1 "-12V" H 5415 5773 50  0000 C CNN
-F 2 "" H 5400 5600 50  0001 C CNN
-F 3 "" H 5400 5600 50  0001 C CNN
-	1    5400 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0126
-U 1 1 5C501F0A
-P 5250 5850
-F 0 "#PWR0126" H 5250 5600 50  0001 C CNN
-F 1 "GND" H 5255 5677 50  0000 C CNN
-F 2 "" H 5250 5850 50  0001 C CNN
-F 3 "" H 5250 5850 50  0001 C CNN
-	1    5250 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 5850 5250 5850
-Wire Wire Line
-	5400 6050 5400 6000
-Wire Wire Line
-	5400 5600 5400 5650
-Wire Wire Line
-	5400 5650 5100 5650
-Wire Wire Line
-	4200 5350 5150 5350
-Wire Wire Line
-	5100 6250 5150 6250
-$Comp
-L Eurorack:Doepfer_Power_16pin P108
-U 1 1 5C501F16
-P 4750 5950
-F 0 "P108" H 4750 6615 50  0000 C CNN
-F 1 "Doepfer_Power_16pin" H 4750 6524 50  0000 C CNN
-F 2 "Connectors_IDC:IDC-Header_2x08_Pitch2.54mm_Straight" H 4750 5950 50  0001 C CNN
-F 3 "DOCUMENTATION" H 4750 5950 50  0001 C CNN
-	1    4750 5950
-	1    0    0    -1  
-$EndComp
-Connection ~ 4400 5650
-Connection ~ 5100 5650
-Wire Wire Line
-	5100 6350 5100 6500
-Wire Wire Line
-	5100 6500 4400 6500
-Wire Wire Line
-	4400 6500 4400 6350
-Connection ~ 5100 6350
-Wire Wire Line
-	5150 6250 5150 6550
-Wire Wire Line
-	5150 6550 4350 6550
-Wire Wire Line
-	4350 6550 4350 6250
-Wire Wire Line
-	4350 6250 4400 6250
-Connection ~ 5150 6250
-Wire Wire Line
-	5150 6250 5350 6250
-Wire Wire Line
-	5100 6050 5250 6050
-Wire Wire Line
-	5100 6150 5200 6150
-Wire Wire Line
-	5200 6150 5200 6600
-Wire Wire Line
-	5200 6600 4300 6600
-Wire Wire Line
-	4300 6600 4300 6150
-Wire Wire Line
-	4300 6150 4400 6150
-$Comp
-L power:+5V #PWR0130
-U 1 1 5C501F2F
-P 5500 6100
-F 0 "#PWR0130" H 5500 5950 50  0001 C CNN
-F 1 "+5V" H 5515 6273 50  0000 C CNN
-F 2 "" H 5500 6100 50  0001 C CNN
-F 3 "" H 5500 6100 50  0001 C CNN
-	1    5500 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 6150 5500 6150
-Wire Wire Line
-	5500 6150 5500 6100
-Connection ~ 5200 6150
-Connection ~ 4050 5650
-Connection ~ 4050 5950
-Connection ~ 4050 6050
-Connection ~ 4200 5350
-Connection ~ 4200 5750
 $Comp
 L power:-12V #PWR0109
 U 1 1 5C902E9A
@@ -846,11 +457,6 @@ F 3 "~" H 6000 1425 50  0001 C CNN
 	1    6000 1425
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3300 5950 3300 5850
-Connection ~ 3300 5850
-Wire Wire Line
-	3300 5850 3300 5750
 Wire Wire Line
 	750  4550 750  4450
 Connection ~ 750  4450
@@ -965,45 +571,11 @@ F 3 "~" H 7550 2800 50  0001 C CNN
 	1    7550 2800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C111
-U 1 1 5DA10F0F
-P 7350 2800
-F 0 "C111" H 7442 2846 50  0000 L CNN
-F 1 "100n" H 7300 2600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7350 2800 50  0001 C CNN
-F 3 "~" H 7350 2800 50  0001 C CNN
-	1    7350 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C110
-U 1 1 5DA111B9
-P 7100 2800
-F 0 "C110" H 7192 2846 50  0000 L CNN
-F 1 "100n" H 7050 2600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7100 2800 50  0001 C CNN
-F 3 "~" H 7100 2800 50  0001 C CNN
-	1    7100 2800
-	1    0    0    -1  
-$EndComp
 Connection ~ 7800 2700
-Connection ~ 7100 2700
-Wire Wire Line
-	7100 2700 7350 2700
-Connection ~ 7350 2700
-Wire Wire Line
-	7350 2700 7550 2700
 Connection ~ 7550 2700
 Wire Wire Line
 	7550 2700 7800 2700
 Connection ~ 7800 2900
-Connection ~ 7100 2900
-Wire Wire Line
-	7100 2900 7350 2900
-Connection ~ 7350 2900
-Wire Wire Line
-	7350 2900 7550 2900
 Connection ~ 7550 2900
 Wire Wire Line
 	7550 2900 7800 2900
@@ -1084,119 +656,7 @@ $EndComp
 Connection ~ 2050 2825
 Wire Wire Line
 	2050 2825 1750 2825
-$Comp
-L Device:C_Small C118
-U 1 1 5DBC1F1A
-P 2350 2925
-F 0 "C118" H 2442 2971 50  0000 L CNN
-F 1 "100n" H 2442 2880 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2350 2925 50  0001 C CNN
-F 3 "~" H 2350 2925 50  0001 C CNN
-	1    2350 2925
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C106
-U 1 1 5DBC1F20
-P 2350 2725
-F 0 "C106" H 2442 2771 50  0000 L CNN
-F 1 "100n" H 2442 2680 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2350 2725 50  0001 C CNN
-F 3 "~" H 2350 2725 50  0001 C CNN
-	1    2350 2725
-	-1   0    0    1   
-$EndComp
-Connection ~ 2350 2825
-$Comp
-L Device:C_Small C119
-U 1 1 5DBFAB1B
-P 2600 2925
-F 0 "C119" H 2692 2971 50  0000 L CNN
-F 1 "100n" H 2692 2880 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2600 2925 50  0001 C CNN
-F 3 "~" H 2600 2925 50  0001 C CNN
-	1    2600 2925
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C107
-U 1 1 5DBFAB21
-P 2600 2725
-F 0 "C107" H 2692 2771 50  0000 L CNN
-F 1 "100n" H 2692 2680 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2600 2725 50  0001 C CNN
-F 3 "~" H 2600 2725 50  0001 C CNN
-	1    2600 2725
-	-1   0    0    1   
-$EndComp
-Connection ~ 2600 2825
-Wire Wire Line
-	2600 2825 2350 2825
-$Comp
-L Device:C_Small C120
-U 1 1 5DBFAB2B
-P 2900 2925
-F 0 "C120" H 2992 2971 50  0000 L CNN
-F 1 "100n" H 2992 2880 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 2925 50  0001 C CNN
-F 3 "~" H 2900 2925 50  0001 C CNN
-	1    2900 2925
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C108
-U 1 1 5DBFAB31
-P 2900 2725
-F 0 "C108" H 2992 2771 50  0000 L CNN
-F 1 "100n" H 2992 2680 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 2725 50  0001 C CNN
-F 3 "~" H 2900 2725 50  0001 C CNN
-	1    2900 2725
-	-1   0    0    1   
-$EndComp
-Connection ~ 2900 2825
-Wire Wire Line
-	2900 2825 2600 2825
-$Comp
-L Device:C_Small C121
-U 1 1 5DBFAB3B
-P 3200 2925
-F 0 "C121" H 3292 2971 50  0000 L CNN
-F 1 "100n" H 3292 2880 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3200 2925 50  0001 C CNN
-F 3 "~" H 3200 2925 50  0001 C CNN
-	1    3200 2925
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C109
-U 1 1 5DBFAB41
-P 3200 2725
-F 0 "C109" H 3292 2771 50  0000 L CNN
-F 1 "100n" H 3292 2680 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3200 2725 50  0001 C CNN
-F 3 "~" H 3200 2725 50  0001 C CNN
-	1    3200 2725
-	-1   0    0    1   
-$EndComp
-Connection ~ 3200 2825
-Wire Wire Line
-	3200 2825 2900 2825
-Wire Wire Line
-	2350 2825 2050 2825
 Connection ~ 1150 2625
-Connection ~ 3200 2625
-Wire Wire Line
-	3200 2625 2900 2625
-Connection ~ 2900 2625
-Wire Wire Line
-	2900 2625 2600 2625
-Connection ~ 2600 2625
-Wire Wire Line
-	2600 2625 2350 2625
-Connection ~ 2350 2625
-Wire Wire Line
-	2350 2625 2050 2625
 Connection ~ 2050 2625
 Wire Wire Line
 	2050 2625 1750 2625
@@ -1207,18 +667,6 @@ Connection ~ 1450 2625
 Wire Wire Line
 	1450 2625 1150 2625
 Connection ~ 1150 3025
-Connection ~ 3200 3025
-Wire Wire Line
-	3200 3025 2900 3025
-Connection ~ 2900 3025
-Wire Wire Line
-	2900 3025 2600 3025
-Connection ~ 2600 3025
-Wire Wire Line
-	2600 3025 2350 3025
-Connection ~ 2350 3025
-Wire Wire Line
-	2350 3025 2050 3025
 Connection ~ 2050 3025
 Wire Wire Line
 	2050 3025 1750 3025
@@ -1328,34 +776,6 @@ F 3 "~" H 3250 1475 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3250 1275 3250 1325
-Wire Wire Line
-	5050 4650 5200 4650
-Wire Wire Line
-	5200 4650 5200 5250
-Wire Wire Line
-	5200 5250 4200 5250
-Wire Wire Line
-	4200 5250 4200 4650
-Connection ~ 5200 4650
-Wire Wire Line
-	5200 4650 5350 4650
-Connection ~ 4200 4650
-Wire Wire Line
-	4200 4650 4350 4650
-Wire Wire Line
-	5250 6050 5250 6650
-Wire Wire Line
-	5250 6650 4250 6650
-Wire Wire Line
-	4250 6650 4250 6050
-Wire Wire Line
-	4050 6050 4250 6050
-Connection ~ 5250 6050
-Wire Wire Line
-	5250 6050 5400 6050
-Connection ~ 4250 6050
-Wire Wire Line
-	4250 6050 4400 6050
 Wire Wire Line
 	1700 4650 1700 5250
 Wire Wire Line
@@ -1784,16 +1204,6 @@ Wire Wire Line
 	6350 1325 6275 1325
 Wire Wire Line
 	6275 1325 6275 1225
-Wire Wire Line
-	6800 2700 7100 2700
-Wire Wire Line
-	6150 2900 7100 2900
-Wire Wire Line
-	3200 2625 3550 2625
-Wire Wire Line
-	3200 3025 3600 3025
-Wire Wire Line
-	3200 2825 4250 2825
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5D3A32E5
@@ -1898,4 +1308,14 @@ Wire Wire Line
 	1175 1650 1800 1650
 Wire Wire Line
 	1675 925  1800 925 
+Wire Wire Line
+	2050 3025 3600 3025
+Wire Wire Line
+	2050 2825 4250 2825
+Wire Wire Line
+	2050 2625 3550 2625
+Wire Wire Line
+	6800 2700 7550 2700
+Wire Wire Line
+	6150 2900 7550 2900
 $EndSCHEMATC
