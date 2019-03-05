@@ -284,46 +284,12 @@ Wire Wire Line
 Connection ~ 3900 1225
 Text GLabel 3300 1575 2    50   Input ~ 0
 VinGND
-$Comp
-L Device:CP C205
-U 1 1 5CBAAF5E
-P 4900 1325
-F 0 "C205" H 5018 1371 50  0000 L CNN
-F 1 "1000uF" H 5018 1280 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4938 1175 50  0001 C CNN
-F 3 "~" H 4900 1325 50  0001 C CNN
-	1    4900 1325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C213
-U 1 1 5CBAAF65
-P 4900 1875
-F 0 "C213" H 5018 1921 50  0000 L CNN
-F 1 "1000uF" H 5018 1830 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4938 1725 50  0001 C CNN
-F 3 "~" H 4900 1875 50  0001 C CNN
-	1    4900 1875
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 2025 5050 2025
-Connection ~ 5050 2025
 Wire Wire Line
 	5050 2025 5150 2025
 Wire Wire Line
 	5150 1725 5050 1725
-Connection ~ 5050 1725
-Wire Wire Line
-	5050 1725 4900 1725
-Connection ~ 5050 1475
 Wire Wire Line
 	5050 1475 5150 1475
-Wire Wire Line
-	4900 1475 5050 1475
-Wire Wire Line
-	4900 1175 5050 1175
-Connection ~ 5050 1175
 Wire Wire Line
 	5050 1175 5150 1175
 $Comp
