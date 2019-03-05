@@ -1419,7 +1419,7 @@ U 1 1 5CDD6A99
 P 900 1125
 F 0 "J101" H 955 1450 50  0000 C CNN
 F 1 "Laptop Power" H 955 1359 50  0000 C CNN
-F 2 "" H 950 1085 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 950 1085 50  0001 C CNN
 F 3 "~" H 950 1085 50  0001 C CNN
 	1    900  1125
 	1    0    0    -1  
@@ -1719,7 +1719,7 @@ U 1 1 5D2307C7
 P 875 1750
 F 0 "J105" H 930 2075 50  0000 C CNN
 F 1 "Laptop Power Out" H 930 1984 50  0000 C CNN
-F 2 "" H 925 1710 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 925 1710 50  0001 C CNN
 F 3 "~" H 925 1710 50  0001 C CNN
 	1    875  1750
 	1    0    0    -1  
