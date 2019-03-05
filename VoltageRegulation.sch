@@ -101,8 +101,6 @@ Wire Wire Line
 Wire Wire Line
 	3725 1325 3725 1575
 Connection ~ 3725 1575
-Wire Wire Line
-	4025 1025 4225 1025
 $Comp
 L Device:CP C204
 U 1 1 5CBAAEE1
@@ -165,19 +163,6 @@ Connection ~ 3325 1025
 Wire Wire Line
 	3325 1025 3425 1025
 Wire Wire Line
-	4225 1175 4225 1025
-Connection ~ 4225 1025
-Wire Wire Line
-	4225 1475 4225 1575
-Wire Wire Line
-	4225 2025 4225 2125
-Connection ~ 4225 2125
-Wire Wire Line
-	3725 1575 4225 1575
-Connection ~ 4225 1575
-Wire Wire Line
-	4225 1575 4225 1725
-Wire Wire Line
 	2275 1025 2575 1025
 Connection ~ 2275 1575
 Wire Wire Line
@@ -220,8 +205,6 @@ $EndComp
 Connection ~ 3175 2125
 Wire Wire Line
 	3175 2125 3325 2125
-Wire Wire Line
-	4025 2125 4225 2125
 $Comp
 L Device:C_Small C215
 U 1 1 5CBAAF3A
@@ -254,14 +237,6 @@ Wire Wire Line
 Connection ~ 3075 1225
 Text GLabel 2475 1575 2    50   Input ~ 0
 VinGND
-Wire Wire Line
-	4225 2025 4325 2025
-Wire Wire Line
-	4325 1725 4225 1725
-Wire Wire Line
-	4225 1475 4325 1475
-Wire Wire Line
-	4225 1175 4325 1175
 $Comp
 L Connector:TestPoint TP201
 U 1 1 5CBAAF78
@@ -278,11 +253,7 @@ Wire Wire Line
 Wire Wire Line
 	3325 2475 3325 2125
 Wire Wire Line
-	4225 2475 4225 2125
-Wire Wire Line
 	3325 775  3325 1025
-Wire Wire Line
-	4225 775  4225 1025
 $Comp
 L power:-15V #PWR0206
 U 1 1 5CBAAF84
@@ -433,11 +404,11 @@ $EndComp
 Wire Wire Line
 	3325 2475 3575 2475
 Wire Wire Line
-	3875 2475 4225 2475
+	3875 2475 4025 2475
 Wire Wire Line
 	3325 775  3575 775 
 Wire Wire Line
-	3875 775  4225 775 
+	3875 775  4025 775 
 $Comp
 L Device:Fuse_Small F203
 U 1 1 5CBAAFF0
@@ -1377,5 +1348,52 @@ Text GLabel 2750 5725 1    59   Input ~ 0
 Text GLabel 4025 2125 1    59   Input ~ 0
 -12Vreg
 Text GLabel 2750 6825 1    59   Input ~ 0
-12Vreg
+-12Vreg
+Wire Wire Line
+	4325 1175 4325 1025
+Wire Wire Line
+	4325 1475 4325 1575
+Wire Wire Line
+	3725 1575 4325 1575
+Connection ~ 4325 1575
+Wire Wire Line
+	4325 1575 4325 1725
+Wire Wire Line
+	4325 2125 4325 2025
+Wire Wire Line
+	4025 2125 4025 2475
+Wire Wire Line
+	4025 1025 4025 775 
+Wire Wire Line
+	4225 1025 4325 1025
+Wire Wire Line
+	4225 2125 4325 2125
+$Comp
+L power:+12V #PWR?
+U 1 1 5C8E1CCD
+P 4325 1025
+AR Path="/5C8E1CCD" Ref="#PWR?"  Part="1" 
+AR Path="/5CBAA806/5C8E1CCD" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 4325 875 50  0001 C CNN
+F 1 "+12V" H 4340 1198 50  0000 C CNN
+F 2 "" H 4325 1025 50  0001 C CNN
+F 3 "" H 4325 1025 50  0001 C CNN
+	1    4325 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5C8E1CD3
+P 4325 2125
+AR Path="/5C8E1CD3" Ref="#PWR?"  Part="1" 
+AR Path="/5CBAA806/5C8E1CD3" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 4325 2225 50  0001 C CNN
+F 1 "-12V" H 4340 2298 50  0000 C CNN
+F 2 "" H 4325 2125 50  0001 C CNN
+F 3 "" H 4325 2125 50  0001 C CNN
+	1    4325 2125
+	-1   0    0    1   
+$EndComp
+Connection ~ 4325 1025
+Connection ~ 4325 2125
 $EndSCHEMATC
