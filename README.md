@@ -2,7 +2,7 @@
 Takes a Laptop 19V input and makes +-12 and 5 v out
 
 # MK1 Design
-## Status - 
+## Status - SCH initiated
 ## Initial 
 | Stage  | Detail | Status |
 | ------------- | ------------- | ------------- |
