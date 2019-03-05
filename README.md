@@ -51,6 +51,14 @@ The idea is to have a laptop power supply provide the power for the synth, as th
 
 
 ## Electrical
+The input is fed to a DC-DC boost converter (to 30volts) and to a virtual GND circuit (making it +-15v) for the +-12v supply.
+The +15v is sent to a step down converter (to 7volts) for the +5v supply.
+The +-15 and +7 volt supplies are provided through common mode chokes to linear regulators.
+
+### Safety / Protection
+The 19v is fed through a bridge rectifier to protect the circuit and allow for both AC and DC with any polarity. The circuit is protected on the input by a polyfuse and a VDR afterwards to protect from overcurrent and over voltage.
+The linear regulators are fused with polyfuses
+
 
 ## Physical
 The product is an 8HP module for the front of a Eurorack synth.
