@@ -1318,4 +1318,142 @@ Wire Wire Line
 	6800 2700 7550 2700
 Wire Wire Line
 	6150 2900 7550 2900
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5C8F1F4B
+P 9275 4750
+F 0 "J?" H 9381 5028 50  0000 C CNN
+F 1 "FrontInterConnVout" H 9381 4937 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:BoardConnector2x2.54x10mm4pin" H 9275 4750 50  0001 C CNN
+F 3 "~" H 9275 4750 50  0001 C CNN
+	1    9275 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C8F21DA
+P 10300 4175
+F 0 "#PWR?" H 10300 4025 50  0001 C CNN
+F 1 "+5V" H 10315 4348 50  0000 C CNN
+F 2 "" H 10300 4175 50  0001 C CNN
+F 3 "" H 10300 4175 50  0001 C CNN
+	1    10300 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C8F21E0
+P 9675 4175
+F 0 "#PWR?" H 9675 4025 50  0001 C CNN
+F 1 "+12V" H 9690 4348 50  0000 C CNN
+F 2 "" H 9675 4175 50  0001 C CNN
+F 3 "" H 9675 4175 50  0001 C CNN
+	1    9675 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5C8F21E6
+P 9900 4175
+F 0 "#PWR?" H 9900 4275 50  0001 C CNN
+F 1 "-12V" H 9915 4348 50  0000 C CNN
+F 2 "" H 9900 4175 50  0001 C CNN
+F 3 "" H 9900 4175 50  0001 C CNN
+	1    9900 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C8F21EC
+P 10100 4175
+F 0 "#PWR?" H 10100 3925 50  0001 C CNN
+F 1 "GND" H 10105 4002 50  0000 C CNN
+F 2 "" H 10100 4175 50  0001 C CNN
+F 3 "" H 10100 4175 50  0001 C CNN
+	1    10100 4175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5C915994
+P 10725 4750
+F 0 "J?" H 10698 4723 50  0000 R CNN
+F 1 "BaseInterConnVout" H 10698 4632 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:BoardConnector2x2.54x10mm4pin" H 10725 4750 50  0001 C CNN
+F 3 "~" H 10725 4750 50  0001 C CNN
+	1    10725 4750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9475 4650 9675 4650
+Wire Wire Line
+	9475 4750 10300 4750
+Wire Wire Line
+	9475 4850 10100 4850
+Wire Wire Line
+	9475 4950 9900 4950
+Wire Wire Line
+	9675 4175 9675 4650
+Connection ~ 9675 4650
+Wire Wire Line
+	9675 4650 10525 4650
+Wire Wire Line
+	9900 4175 9900 4950
+Connection ~ 9900 4950
+Wire Wire Line
+	9900 4950 10525 4950
+Wire Wire Line
+	10100 4175 10100 4850
+Connection ~ 10100 4850
+Wire Wire Line
+	10100 4850 10525 4850
+Wire Wire Line
+	10300 4175 10300 4750
+Connection ~ 10300 4750
+Wire Wire Line
+	10300 4750 10525 4750
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5C9B2CF1
+P 7575 4650
+F 0 "J?" H 7681 4828 50  0000 C CNN
+F 1 "FrontInterConnVin" H 7681 4737 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:BoardConnector2x2.54x10mm2pin" H 7575 4650 50  0001 C CNN
+F 3 "~" H 7575 4650 50  0001 C CNN
+	1    7575 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5C9B2E76
+P 8725 4650
+F 0 "J?" H 8698 4623 50  0000 R CNN
+F 1 "BaseInterConnVin" H 8698 4532 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:BoardConnector2x2.54x10mm2pin" H 8725 4650 50  0001 C CNN
+F 3 "~" H 8725 4650 50  0001 C CNN
+	1    8725 4650
+	-1   0    0    -1  
+$EndComp
+Text GLabel 8275 4550 2    50   Input ~ 0
+Vin-Pos19
+Text GLabel 8275 4850 2    50   Input ~ 0
+Vin-Neg19
+Wire Wire Line
+	7775 4750 8125 4750
+Wire Wire Line
+	8525 4650 8125 4650
+Wire Wire Line
+	8275 4850 8125 4850
+Wire Wire Line
+	8125 4850 8125 4750
+Connection ~ 8125 4750
+Wire Wire Line
+	8125 4750 8525 4750
+Wire Wire Line
+	8275 4550 8125 4550
+Wire Wire Line
+	8125 4550 8125 4650
+Connection ~ 8125 4650
+Wire Wire Line
+	8125 4650 7775 4650
 $EndSCHEMATC
