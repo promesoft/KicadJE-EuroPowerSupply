@@ -33,6 +33,9 @@ Takes a Laptop 19V input and makes +-12 and 5 v out
 # Base Construction 
 The idea is to have a laptop power supply provide the power for the synth, as they are powerful and inexpensive.
 
+![](KicadJE-EuroPowerSupply_3DTop1.png)
+![](KicadJE-EuroPowerSupply_3DBottom1.png)
+
 ## Inputs
 19v DC barrel jack.
 
@@ -48,7 +51,6 @@ The idea is to have a laptop power supply provide the power for the synth, as th
  - 16 pin doepfer connector
  - +/- 12v connector
  - +5 v connector
-
 
 ## Electrical
 The input is fed to a DC-DC boost converter (to 30volts) and to a virtual GND circuit (making it +-15v) for the +-12v supply.
