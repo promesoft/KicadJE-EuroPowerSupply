@@ -25,45 +25,15 @@ F 3 "" H 3175 1575 50  0001 C CNN
 	1    3175 1575
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:EMI_Filter_CommonMode FL201
-U 1 1 5CBAAEA4
-P 2775 1125
-F 0 "FL201" H 2775 709 50  0000 C CNN
-F 1 "EMI_Filter_CommonMode" H 2775 800 50  0000 C CNN
-F 2 "Inductor_THT:L_CommonMode_Toroid_Vertical_L19.3mm_W10.8mm_Px6.35mm_Py15.24mm_Bourns_8100" H 2775 891 50  0000 C CNN
-F 3 "~" V 2775 1165 50  0000 C CNN
-	1    2775 1125
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:EMI_Filter_CommonMode FL203
-U 1 1 5CBAAEAB
-P 2775 2025
-F 0 "FL203" H 2775 2394 50  0000 C CNN
-F 1 "EMI_Filter_CommonMode" H 2775 2303 50  0000 C CNN
-F 2 "Inductor_THT:L_CommonMode_Toroid_Vertical_L19.3mm_W10.8mm_Px6.35mm_Py15.24mm_Bourns_8100" H 2425 1775 50  0000 C CNN
-F 3 "~" V 2775 2065 50  0000 C CNN
-	1    2775 2025
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	2575 1225 2475 1225
 Wire Wire Line
 	2475 1225 2475 1575
-Wire Wire Line
-	2475 1925 2575 1925
 Connection ~ 2475 1575
 Wire Wire Line
 	2475 1575 2475 1925
 Wire Wire Line
-	2975 1925 3075 1925
-Wire Wire Line
 	3075 1925 3075 1575
 Wire Wire Line
 	3075 1575 3175 1575
-Wire Wire Line
-	2975 1225 3075 1225
 Wire Wire Line
 	3075 1225 3075 1575
 Connection ~ 3075 1575
@@ -89,10 +59,6 @@ F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 3725 2075 50  0001 C CNN
 	1    3725 2125
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2975 1025 3075 1025
-Wire Wire Line
-	2975 2125 3075 2125
 Wire Wire Line
 	3725 1575 3725 1825
 Connection ~ 3175 1575
@@ -162,13 +128,9 @@ Wire Wire Line
 Connection ~ 3325 1025
 Wire Wire Line
 	3325 1025 3425 1025
-Wire Wire Line
-	2275 1025 2575 1025
 Connection ~ 2275 1575
 Wire Wire Line
 	2275 1575 2475 1575
-Wire Wire Line
-	2275 2125 2575 2125
 $Comp
 L power:PWR_FLAG #FLG0201
 U 1 1 5CBAAF25
@@ -237,19 +199,6 @@ Wire Wire Line
 Connection ~ 3075 1225
 Text GLabel 2475 1575 2    50   Input ~ 0
 VinGND
-$Comp
-L Connector:TestPoint TP201
-U 1 1 5CBAAF78
-P 2125 1575
-F 0 "TP201" H 2183 1695 50  0000 L CNN
-F 1 "VGnd" H 2183 1604 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2325 1575 50  0001 C CNN
-F 3 "~" H 2325 1575 50  0001 C CNN
-	1    2125 1575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2125 1575 2275 1575
 Wire Wire Line
 	3325 2475 3325 2125
 Wire Wire Line
@@ -500,21 +449,8 @@ F 3 "" H 10375 1100 50  0001 C CNN
 	1    10375 1100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:EMI_Filter_CommonMode FL?
-U 1 1 5CC6E22A
-P 8975 1300
-AR Path="/5CC6E22A" Ref="FL?"  Part="1" 
-AR Path="/5CBAA806/5CC6E22A" Ref="FL202"  Part="1" 
-F 0 "FL202" H 8975 884 50  0000 C CNN
-F 1 "EMI_Filter_CommonMode" H 8975 975 50  0000 C CNN
-F 2 "Inductor_THT:L_CommonMode_Toroid_Vertical_L19.3mm_W10.8mm_Px6.35mm_Py15.24mm_Bourns_8100" H 8875 1075 50  0000 C CNN
-F 3 "~" V 8975 1340 50  0000 C CNN
-	1    8975 1300
-	1    0    0    1   
-$EndComp
 Wire Wire Line
-	8775 1600 8775 1400
+	8775 1600 8775 1500
 $Comp
 L Regulator_Linear:LM7805_TO220 U?
 U 1 1 5CC6E239
@@ -556,8 +492,6 @@ Wire Wire Line
 	8625 1600 8775 1600
 Wire Wire Line
 	8625 1300 8625 1200
-Wire Wire Line
-	8625 1200 8775 1200
 $Comp
 L Device:CP_Small C?
 U 1 1 5CC6E24F
@@ -625,7 +559,6 @@ F 3 "~" H 9175 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9175 1200
-Connection ~ 9175 1400
 $Comp
 L power:+7.5V #PWR?
 U 1 1 5CC6E27E
@@ -928,47 +861,8 @@ Text GLabel 7050 3275 0    50   Input ~ 0
 Vin+15
 Text GLabel 10500 3775 2    50   Input ~ 0
 VinGND
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5CE39236
-P 7800 3275
-AR Path="/5CE39236" Ref="TP?"  Part="1" 
-AR Path="/5CBAA806/5CE39236" Ref="TP202"  Part="1" 
-F 0 "TP202" H 7858 3395 50  0000 L CNN
-F 1 "Vin+15" H 7858 3304 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8000 3275 50  0001 C CNN
-F 3 "~" H 8000 3275 50  0001 C CNN
-	1    7800 3275
-	1    0    0    -1  
-$EndComp
 Connection ~ 7800 3275
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5CE3923E
-P 7800 4275
-AR Path="/5CE3923E" Ref="TP?"  Part="1" 
-AR Path="/5CBAA806/5CE3923E" Ref="TP204"  Part="1" 
-F 0 "TP204" H 7742 4302 50  0000 R CNN
-F 1 "Vin-15" H 7742 4393 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8000 4275 50  0001 C CNN
-F 3 "~" H 8000 4275 50  0001 C CNN
-	1    7800 4275
-	-1   0    0    1   
-$EndComp
 Connection ~ 7800 4275
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5CE39246
-P 10000 3775
-AR Path="/5CE39246" Ref="TP?"  Part="1" 
-AR Path="/5CBAA806/5CE39246" Ref="TP203"  Part="1" 
-F 0 "TP203" H 10058 3895 50  0000 L CNN
-F 1 "VGnd" H 10058 3804 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 10200 3775 50  0001 C CNN
-F 3 "~" H 10200 3775 50  0001 C CNN
-	1    10000 3775
-	1    0    0    -1  
-$EndComp
 Connection ~ 10000 3775
 $Comp
 L Device:C_Small C?
@@ -1396,4 +1290,107 @@ F 3 "" H 4325 2125 50  0001 C CNN
 $EndComp
 Connection ~ 4325 1025
 Connection ~ 4325 2125
+$Comp
+L Device:R R?
+U 1 1 5C9F5FF0
+P 2775 1025
+AR Path="/5C9F5FF0" Ref="R?"  Part="1" 
+AR Path="/5CBAA806/5C9F5FF0" Ref="R?"  Part="1" 
+F 0 "R?" V 2568 1025 50  0000 C CNN
+F 1 "0r25" V 2659 1025 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 2705 1025 50  0001 C CNN
+F 3 "~" H 2775 1025 50  0001 C CNN
+	1    2775 1025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2275 1025 2625 1025
+Wire Wire Line
+	2925 1025 3075 1025
+$Comp
+L Device:R R?
+U 1 1 5CA04086
+P 2775 1225
+AR Path="/5CA04086" Ref="R?"  Part="1" 
+AR Path="/5CBAA806/5CA04086" Ref="R?"  Part="1" 
+F 0 "R?" V 2568 1225 50  0000 C CNN
+F 1 "0r25" V 2659 1225 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 2705 1225 50  0001 C CNN
+F 3 "~" H 2775 1225 50  0001 C CNN
+	1    2775 1225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2475 1225 2625 1225
+Wire Wire Line
+	2925 1225 3075 1225
+$Comp
+L Device:R R?
+U 1 1 5CA1221A
+P 2775 1925
+AR Path="/5CA1221A" Ref="R?"  Part="1" 
+AR Path="/5CBAA806/5CA1221A" Ref="R?"  Part="1" 
+F 0 "R?" V 2568 1925 50  0000 C CNN
+F 1 "0r25" V 2659 1925 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 2705 1925 50  0001 C CNN
+F 3 "~" H 2775 1925 50  0001 C CNN
+	1    2775 1925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2475 1925 2625 1925
+Wire Wire Line
+	2925 1925 3075 1925
+$Comp
+L Device:R R?
+U 1 1 5CA206D7
+P 2775 2125
+AR Path="/5CA206D7" Ref="R?"  Part="1" 
+AR Path="/5CBAA806/5CA206D7" Ref="R?"  Part="1" 
+F 0 "R?" V 2568 2125 50  0000 C CNN
+F 1 "0r25" V 2659 2125 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 2705 2125 50  0001 C CNN
+F 3 "~" H 2775 2125 50  0001 C CNN
+	1    2775 2125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2275 2125 2625 2125
+Wire Wire Line
+	2925 2125 3075 2125
+$Comp
+L Device:R R?
+U 1 1 5CA2EF68
+P 9000 1500
+AR Path="/5CA2EF68" Ref="R?"  Part="1" 
+AR Path="/5CBAA806/5CA2EF68" Ref="R?"  Part="1" 
+F 0 "R?" V 8793 1500 50  0000 C CNN
+F 1 "0r25" V 8884 1500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 8930 1500 50  0001 C CNN
+F 3 "~" H 9000 1500 50  0001 C CNN
+	1    9000 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CA2F2E9
+P 9000 1200
+AR Path="/5CA2F2E9" Ref="R?"  Part="1" 
+AR Path="/5CBAA806/5CA2F2E9" Ref="R?"  Part="1" 
+F 0 "R?" V 8793 1200 50  0000 C CNN
+F 1 "0r25" V 8884 1200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 8930 1200 50  0001 C CNN
+F 3 "~" H 9000 1200 50  0001 C CNN
+	1    9000 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8625 1200 8850 1200
+Wire Wire Line
+	9150 1200 9175 1200
+Wire Wire Line
+	9150 1500 9175 1500
+Connection ~ 9175 1500
+Wire Wire Line
+	8850 1500 8775 1500
 $EndSCHEMATC
