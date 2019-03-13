@@ -32,7 +32,7 @@ Takes a Laptop 19V input and makes +-12 and 5 v out
 
 # Base Construction 
 The idea is to have a laptop power supply provide the power for the synth, as they are powerful and inexpensive.
-
+![](Eurorack_Faceplate_19Power_1.pdf.png)
 ![](KicadJE-EuroPowerSupply_3DTop1.png)
 ![](KicadJE-EuroPowerSupply_3DBottom1.png)
 ![](Eurorack_Faceplate_19Power_1.pdf)
