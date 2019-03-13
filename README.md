@@ -57,6 +57,18 @@ The input is fed to a DC-DC boost converter (to 30volts) and to a virtual GND ci
 The +15v is sent to a step down converter (to 7volts) for the +5v supply.
 The +-15 and +7 volt supplies are provided through common mode chokes to linear regulators.
 
+## Regulation and noise 
+### Input
+No filtering on the input except for the overvoltage protection
+### DCDC - Boost 30v
+Directly on the DCDC output is made room for a Zener regulated NPN for 28 or 30v depending on the boost converter.
+The 30v is sent to a Virtual GND that has smoothing capacitors on the input and output.
+After the VGND room has been made for either small resistors (forming an RC filter) or a common mode choke for high frequency filtering.
+Regulation is performed after the RC / LC filter with linear 7812 / 7912 regulators.
+
+### DCDC - Buck 5v
+
+
 ### Safety / Protection
 The 19v is fed through a bridge rectifier to protect the circuit and allow for both AC and DC with any polarity. The circuit is protected on the input by a polyfuse and a VDR afterwards in parallel with a Zener (or TVS) in series w a small resistor to protect from overcurrent, over voltage and spikes.
 The linear regulators are fused with polyfuses
