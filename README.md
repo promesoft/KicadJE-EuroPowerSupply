@@ -2,15 +2,15 @@
 Takes a Laptop 19V input and makes +-12 and 5 v out
 
 # MK1 Design
-## Status - SCH initiated
+## Status - PCB in the mail
 ## Initial 
 | Stage  | Detail | Status |
 | ------------- | ------------- | ------------- |
-| create material  | sch/pcb |   |
-| | gerber |  |
-| production  |   |  |
-|  | produced |  |
-|  | delivered |  |
+| create material  | sch/pcb | done  |
+| | gerber | done |
+| production  |   | Initiated |
+|  | produced | Done |
+|  | delivered | In the mail |
 ## Preliminary validation
 | Test  | Detail | Status |
 | ------------- | ------------- | ------------- |
@@ -59,7 +59,7 @@ The +-15 and +7 volt supplies are provided through common mode chokes to linear 
 
 ## Regulation and noise 
 ### Input
-No filtering on the input except for the overvoltage protection
+No filtering on the input except for the overvoltage protection and  smoothing capacitor after the bridge rectifier.
 ### DCDC - Boost 30v
 Directly on the DCDC output is made room for a Zener regulated NPN for 28 or 30v depending on the boost converter.
 The 30v is sent to a Virtual GND that has smoothing capacitors on the input and output.
