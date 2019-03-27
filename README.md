@@ -26,6 +26,7 @@ Takes a Laptop 19V input and makes +-12 and 5 v out
 | Long Term Product Test | |  |
 
 ## Errata
+ * U203 DCDC 5V stepdn converter mirrored pinout - mount on other side (where there is more room)
 ## Issues and Notes
  * Note
 ### Workarounds
