@@ -28,7 +28,11 @@ Takes a Laptop 19V input and makes +-12 and 5 v out
 ## Errata
  * U203 DCDC 5V stepdn converter mirrored pinout - mount on other side (where there is more room)
 ## Issues and Notes
- * Note
+ * Bananas cant be mounted on PCB - too short
+ * Consider soft startup current
+ * Consider larger drill size for 7812 7805 and 7912
+ * Consider cooling of TIP41's and TIP42
+ * Blue LED is brighter than RED - Consider 1k for RED +12 470R for RED +5 and 1k5 for BLUE 
 ### Workarounds
 
 # Base Construction 
