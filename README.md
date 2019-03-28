@@ -8,25 +8,26 @@ Takes a Laptop 19V input and makes +-12 and 5 v out
 | ------------- | ------------- | ------------- |
 | create material  | sch/pcb | done  |
 | | gerber | done |
-| production  |   | Initiated |
+| production  |   | done |
 |  | produced | Done |
-|  | delivered | In the mail |
+|  | delivered | Done |
 ## Preliminary validation
 | Test  | Detail | Status |
 | ------------- | ------------- | ------------- |
-| Initial Inspection |  |  |
-| Initial Technical Test |   |  |
-| Initial Product Test |   |  |
+| Initial Inspection |  | OK |
+| Initial Technical Test |   | OK see errata |
+| Initial Product Test |   | OK |
 
 ## Secondary validation
 | Test  | Detail | Status |
 | ------------- | ------------- |------------- |
-| Product Test |  | |
+| Product Test |  | OK |
 | Quality |  | |
 | Long Term Product Test | |  |
 
 ## Errata
  * U203 DCDC 5V stepdn converter mirrored pinout - mount on other side (where there is more room)
+ * Smaller +28V DCDC does not work - they burn themselves (tried 3 units)
 ## Issues and Notes
  * Bananas cant be mounted on PCB - too short
  * Consider soft startup current
