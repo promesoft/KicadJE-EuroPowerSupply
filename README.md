@@ -23,7 +23,7 @@ Takes a Laptop 19V input and makes +-12 and 5 v out
 | ------------- | ------------- |------------- |
 | Product Test |  | OK |
 | Quality |  | |
-| Long Term Product Test | |  |
+| Long Term Product Test | | Installed in rack  - extended to "EuroPowerCon" via +-13,5v |
 
 ## Errata
  * U203 DCDC 5V stepdn converter mirrored pinout - mount on other side (where there is more room)
