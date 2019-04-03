@@ -41,6 +41,7 @@ Another result is a higher Current draw on the primary side, which will blow the
  * Consider cooling of TIP41's and TIP42
  * Blue LED is brighter than RED - Consider 1k for RED +12 470R for RED +5 and 1k5 for BLUE 
 ### Workarounds
+ * U203 DCDC 5V stepdn converter mirrored pinout - mount on other side (where there is more room - and easier adjustment options)
 
 # Base Construction 
 The idea is to have a laptop power supply provide the power for the synth, as they are powerful and inexpensive.
