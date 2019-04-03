@@ -2,7 +2,7 @@
 Takes a Laptop 19V input and makes +-12 and 5 v out
 
 # MK1 Design
-## Status - PCB in the mail
+## Status - Installed in Rack
 ## Initial 
 | Stage  | Detail | Status |
 | ------------- | ------------- | ------------- |
@@ -29,6 +29,9 @@ Takes a Laptop 19V input and makes +-12 and 5 v out
  * U203 DCDC 5V stepdn converter mirrored pinout - mount on other side (where there is more room)
  * Smaller +28V DCDC does not work - they burn themselves (tried 3 units)
 ## Issues and Notes
+Note - as most powerdraw is on the +12V and +5V side the negative rail is not pulling down the VGND and the TIP42 needs to do all the heavy lifting - resulting in wasting almost 1/2 the power in this transistor.
+The TIP41 line regulator passes all the current and the more regulation it needs to perform the more power it wastes and the hotter it gets. Therefore the Zener input should be matched well with the DCDC Boosted output to avoid power wastage.
+
  * Bananas cant be mounted on PCB - too short
  * Consider soft startup current
  * Consider larger drill size for 7812 7805 and 7912
