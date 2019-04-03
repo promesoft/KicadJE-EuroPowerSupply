@@ -3,7 +3,7 @@ Takes a Laptop 19V input and makes +-12 and 5 v out
 
 # MK1 Design
 ## Status - Installed in Rack
-## Initial 
+## Initial Unit
 | Stage  | Detail | Status |
 | ------------- | ------------- | ------------- |
 | create material  | sch/pcb | done  |
@@ -24,6 +24,13 @@ Takes a Laptop 19V input and makes +-12 and 5 v out
 | Product Test |  | OK |
 | Quality |  | |
 | Long Term Product Test | | Installed in rack  - extended to "EuroPowerCon" via +-13,5v |
+
+## Second Unit tests
+| Test  | Action | Status |
+| ------------- | ------------- |------------- |
+| Lower Power Consumption | Bypass Line regulation TIP41 and turn down DCDC to 27v |  |
+| Lower Power Consumption | twist the offset of VGND in favor of a Vss = -14v Vcc = -13v |  |
+| Simplify | Ommit Banana Jacks | |
 
 ## Errata
  * U203 DCDC 5V stepdn converter mirrored pinout - mount on other side (where there is more room)
