@@ -24,6 +24,7 @@ Takes a Laptop 19V input and makes +-12 and 5 v out
 | Product Test |  | OK |
 | Quality |  | |
 | Long Term Product Test | | Installed in rack  - extended to "EuroPowerCon" via +-13,5v |
+| |  | Working fine after 1 year with different modules coming and going |
 
 ## Second Unit tests
 | Test  | Action | Status |
