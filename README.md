@@ -2,6 +2,7 @@
 Takes a Laptop 19V input and makes +-12 and 5 v out
 
 Please note there is a followup to this repo that has half the width and some fixes: https://github.com/promesoft/KicadJE-EuroPowerSupply2
+Please note this method of making +- 12v could be impaired by the laptop PSU ground connection. Some PSU's connect earth to GND (sleeve) which will be connected to -12v and not GND in this circuit.
 
 # MK1 Design
 ## Status - Installed in Rack
