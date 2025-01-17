@@ -60,6 +60,8 @@ The idea is to have a laptop power supply provide the power for the synth, as th
 ![](KicadJE-EuroPowerSupply_3DTop1.png)
 ![](KicadJE-EuroPowerSupply_3DBottom1.png)
 ![](Eurorack_Faceplate_19Power_1.pdf)
+![](EURORACK_PSU.jpg)
+![](EURORACK_PSU_FRONT.jpg)
 ## Inputs
 19v DC barrel jack.
 
